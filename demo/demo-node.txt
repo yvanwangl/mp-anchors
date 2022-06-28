@@ -1,0 +1,274 @@
+
+DEPENDENCE_DETAIL START_TASK --> PROJECT_1_start(1652422617872) --> TASK_1 --> TASK_2 --> PROJECT_1_end(1652422617872)
+ANCHOR_DETAIL has no any anchor！
+MPAnchors START_TASK -- onStart -- 
+MPAnchors START_TASK -- onRunning -- 
+MPAnchors START_TASK -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (START_TASK ) :::::::::::::::::::::::
+| 依赖任务 : 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422617879
+| 等待运行耗时 : 0ms
+| 运行任务耗时 : 1ms
+| 结束时刻 : 1652422617880
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors PROJECT_1_start(1652422617872) -- onStart -- 
+MPAnchors PROJECT_1_start(1652422617872) -- onRunning -- 
+MPAnchors PROJECT_1_start(1652422617872) -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (PROJECT_1_start(1652422617872) ) :::::::::::::::::::::::
+| 依赖任务 : START_TASK 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422617880
+| 等待运行耗时 : 0ms
+| 运行任务耗时 : 0ms
+| 结束时刻 : 1652422617880
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors TASK_1 -- onStart -- 
+MPAnchors TASK_1 -- onRunning -- 
+Task1 execute
+MPAnchors TASK_1 -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (TASK_1 ) :::::::::::::::::::::::
+| 依赖任务 : PROJECT_1_start(1652422617872) 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422617881
+| 等待运行耗时 : 0ms
+| 运行任务耗时 : 0ms
+| 结束时刻 : 1652422617881
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors TASK_2 -- onStart -- 
+MPAnchors TASK_2 -- onRunning -- 
+Task2 execute
+MPAnchors TASK_2 -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (TASK_2 ) :::::::::::::::::::::::
+| 依赖任务 : TASK_1 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422617881
+| 等待运行耗时 : 0ms
+| 运行任务耗时 : 0ms
+| 结束时刻 : 1652422617881
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors PROJECT_1_end(1652422617872) -- onStart -- 
+MPAnchors PROJECT_1_end(1652422617872) -- onRunning -- 
+MPAnchors PROJECT_1_end(1652422617872) -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (PROJECT_1_end(1652422617872) ) :::::::::::::::::::::::
+| 依赖任务 : TASK_2 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422617882
+| 等待运行耗时 : 0ms
+| 运行任务耗时 : 0ms
+| 结束时刻 : 1652422617882
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors PROJECT_1_end(1652422617872) -- onRelease -- 
+MPAnchors TASK_2 -- onRelease -- 
+MPAnchors TASK_1 -- onRelease -- 
+MPAnchors PROJECT_1_start(1652422617872) -- onRelease -- 
+MPAnchors START_TASK -- onRelease -- 
+
+DEPENDENCE_DETAIL START_TASK_1 --> PROJECT_2_start(1652422617883) --> TASK_3 --> TASK_4 --> PROJECT_2_end(1652422617883)
+
+DEPENDENCE_DETAIL START_TASK_1 --> PROJECT_2_start(1652422617883) --> TASK_3 --> TASK_5 --> TASK_6 --> PROJECT_2_end(1652422617883)
+ANCHOR_DETAIL has no any anchor！
+MPAnchors START_TASK_1 -- onStart -- 
+MPAnchors START_TASK_1 -- onRunning -- 
+MPAnchors START_TASK_1 -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (START_TASK_1 ) :::::::::::::::::::::::
+| 依赖任务 : 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422617883
+| 等待运行耗时 : 0ms
+| 运行任务耗时 : 1ms
+| 结束时刻 : 1652422617884
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors PROJECT_2_start(1652422617883) -- onStart -- 
+MPAnchors PROJECT_2_start(1652422617883) -- onRunning -- 
+MPAnchors PROJECT_2_start(1652422617883) -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (PROJECT_2_start(1652422617883) ) :::::::::::::::::::::::
+| 依赖任务 : START_TASK_1 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422617884
+| 等待运行耗时 : 0ms
+| 运行任务耗时 : 0ms
+| 结束时刻 : 1652422617884
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors TASK_3 -- onStart -- 
+MPAnchors PROJECT_2_start(1652422617883) -- onRelease -- 
+MPAnchors START_TASK_1 -- onRelease -- 
+
+DEPENDENCE_DETAIL START_TASK_2 --> PROJECT_3_start(1652422617885) --> TASK_7 --> TASK_8 --> PROJECT_3_end(1652422617885)
+ANCHOR_DETAIL has no any anchor！
+MPAnchors START_TASK_2 -- onStart -- 
+MPAnchors START_TASK_2 -- onRunning -- 
+MPAnchors START_TASK_2 -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (START_TASK_2 ) :::::::::::::::::::::::
+| 依赖任务 : 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422617885
+| 等待运行耗时 : 0ms
+| 运行任务耗时 : 0ms
+| 结束时刻 : 1652422617885
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors PROJECT_3_start(1652422617885) -- onStart -- 
+MPAnchors PROJECT_3_start(1652422617885) -- onRunning -- 
+MPAnchors PROJECT_3_start(1652422617885) -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (PROJECT_3_start(1652422617885) ) :::::::::::::::::::::::
+| 依赖任务 : START_TASK_2 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422617885
+| 等待运行耗时 : 0ms
+| 运行任务耗时 : 0ms
+| 结束时刻 : 1652422617885
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors TASK_7 -- onStart -- 
+MPAnchors TASK_7 -- onRunning -- 
+Task7 execute
+MPAnchors TASK_7 -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (TASK_7 ) :::::::::::::::::::::::
+| 依赖任务 : PROJECT_3_start(1652422617885) 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422617885
+| 等待运行耗时 : 0ms
+| 运行任务耗时 : 0ms
+| 结束时刻 : 1652422617885
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors TASK_8 -- onStart -- 
+MPAnchors TASK_8 -- onRunning -- 
+Task8 execute
+MPAnchors TASK_8 -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (TASK_8 ) :::::::::::::::::::::::
+| 依赖任务 : TASK_7 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422617886
+| 等待运行耗时 : 0ms
+| 运行任务耗时 : 0ms
+| 结束时刻 : 1652422617886
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors PROJECT_3_end(1652422617885) -- onStart -- 
+MPAnchors PROJECT_3_end(1652422617885) -- onRunning -- 
+MPAnchors PROJECT_3_end(1652422617885) -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (PROJECT_3_end(1652422617885) ) :::::::::::::::::::::::
+| 依赖任务 : TASK_8 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422617886
+| 等待运行耗时 : 0ms
+| 运行任务耗时 : 0ms
+| 结束时刻 : 1652422617886
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors PROJECT_3_end(1652422617885) -- onRelease -- 
+MPAnchors TASK_8 -- onRelease -- 
+MPAnchors TASK_7 -- onRelease -- 
+MPAnchors PROJECT_3_start(1652422617885) -- onRelease -- 
+MPAnchors START_TASK_2 -- onRelease -- 
+MPAnchors TASK_3 -- onRunning -- 
+MPAnchors TASK_3 -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (TASK_3 ) :::::::::::::::::::::::
+| 依赖任务 : PROJECT_2_start(1652422617883) 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422617884
+| 等待运行耗时 : 1001ms
+| 运行任务耗时 : 0ms
+| 结束时刻 : 1652422618885
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors TASK_4 -- onStart -- 
+MPAnchors TASK_4 -- onRunning -- 
+Task4 execute
+MPAnchors TASK_4 -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (TASK_4 ) :::::::::::::::::::::::
+| 依赖任务 : TASK_3 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422618886
+| 等待运行耗时 : 0ms
+| 运行任务耗时 : 0ms
+| 结束时刻 : 1652422618886
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors PROJECT_2_end(1652422617883) -- onStart -- 
+MPAnchors PROJECT_2_end(1652422617883) -- onRunning -- 
+MPAnchors PROJECT_2_end(1652422617883) -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (PROJECT_2_end(1652422617883) ) :::::::::::::::::::::::
+| 依赖任务 : TASK_4 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422618886
+| 等待运行耗时 : 0ms
+| 运行任务耗时 : 0ms
+| 结束时刻 : 1652422618886
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors PROJECT_2_end(1652422617883) -- onRelease -- 
+MPAnchors TASK_4 -- onRelease -- 
+MPAnchors TASK_5 -- onStart -- 
+MPAnchors TASK_5 -- onRunning -- 
+Task5 execute
+MPAnchors TASK_5 -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (TASK_5 ) :::::::::::::::::::::::
+| 依赖任务 : TASK_3 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422618887
+| 等待运行耗时 : 0ms
+| 运行任务耗时 : 0ms
+| 结束时刻 : 1652422618887
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors TASK_6 -- onStart -- 
+MPAnchors TASK_6 -- onRunning -- 
+Task6 execute
+MPAnchors TASK_6 -- onFinish -- 
+TASK_DETAIL TASK_DETAIL_INFO:
+::::::::::::::::::::::: task (TASK_6 ) :::::::::::::::::::::::
+| 依赖任务 : TASK_5 
+| 是否是锚点任务 : false
+| 线程信息 : 逻辑线程
+| 开始时刻 : 1652422618887
+| 等待运行耗时 : 0ms
+| 运行任务耗时 : 0ms
+| 结束时刻 : 1652422618887
+::::::::::::::::::::::::::::::::::::::::::::::
+
+MPAnchors TASK_6 -- onRelease -- 
+MPAnchors TASK_5 -- onRelease -- 
+MPAnchors TASK_3 -- onRelease -- 
+Task3 execute

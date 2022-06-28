@@ -1,0 +1,11 @@
+{
+    "name": "mp-anchors",
+    "npmname": "@yxfe/mp-anchors",
+    "umdname": "@yxfe/mp-anchors",
+    "username": "yvanwangl",
+    "type": "ts",
+    "module": "umd,esm,commonjs",
+    "test": null,
+    "lang": "en",
+    "version": "1.6.0"
+}
